@@ -19,10 +19,10 @@ st.title("💸 Dynamic Insurance Pricing Predictor")
 st.markdown("Estimate medical insurance charges based on customer details.")
 
 # User input section
-age = st.number_input("Age", min_value = 18, max_value = 100, value = 25 , step = 1 , format = "%1f")
+age = st.number_input("Age", min_value = 18, max_value = 100, value = 25 , step = 1 , format = "%d")
 sex = st.selectbox("Sex", ["male", "female"])
 bmi = st.number_input("BMI (Body Mass Index)", min_value=10.0, max_value=50.0, value=25.0, step = 0.1, format="%.1f")
-children = st.slider("Number of Children", 0, 5, 0)
+children = st.number_input("Number of Children", min_value = 0, max_value = 5, value = 0, step = 1 , format = "%d")
 smoker = st.selectbox("Smoker", ["yes", "no"])
 region = st.selectbox("Region", ["northeast", "northwest", "southeast", "southwest"])
 
