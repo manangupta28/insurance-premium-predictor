@@ -14,8 +14,8 @@ model.load_state_dict(torch.load("insurance_model.pth", map_location=torch.devic
 model.eval()
 
 # Streamlit page setup
-st.set_page_config(page_title="Dynamic Insurance Pricing", page_icon="💸")
-st.title("💸 Dynamic Insurance Pricing Predictor")
+st.set_page_config(page_title="Health Insurance Pricing")
+st.title("Health Insurance Pricing Predictor")
 st.markdown("Estimate medical insurance charges based on customer details.")
 
 # User input section
